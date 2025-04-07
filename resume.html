@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloadable PDF</title>
+</head>
+
+<style>
+    /* General Body and Layout Styling */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Header Section */
+    header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 2.5em;
+        letter-spacing: 2px;
+    }
+
+    /* Navigation Bar */
+    nav {
+        text-align: center;
+        margin: 20px 0;
+        background-color: #333;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+        padding: 10px 20px;
+        margin: 0 15px;
+        transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+        background-color: #4CAF50;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+        padding: 10px 20px;
+        margin: 0 15px;
+        transition: background-color 0.3s;
+    }
+
+    footer a:hover {
+        background-color: #4CAF50;
+        color: #fff;
+        border-radius: 5px;
+    }
+    /* Layout for the main content */
+    main {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    /* Work Item Styling */
+    .work-item {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        padding: 20px;
+        width: 45%;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .work-item:hover {
+        transform: translateY(-10px);
+    }
+
+    .work-item img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 15px;
+    }
+
+    .work-item h3 {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .work-item p {
+        font-size: 1.1em;
+        color: #555;
+    }
+
+    /* Footer Section */
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+</style>
+<body>
+
+    <header>
+        Abigail Gottfried - Resume
+    </header>
+
+    <nav>
+        <a href="/index.html">About Me</a>
+        <a href="/FRC.html">FIRST Robotics</a>
+        <a href="/education.html">Education</a>
+        <a href="/work.html">Job Experience</a>
+    </nav>
+    <main>
+        <section>
+        <!-- Embed PDF to display it in the browser -->
+        <embed src="AbigailGottfriedResume.pdf" width="600" height="400" type="application/pdf">
+        </section>
+        <footer>
+            <p>amgottfried8@gmail.com  |  <a href="www.linkedin.com/in/abigail-gottfried-b40b47234">Linkedin</a> |  2025 Abigail Gottfried</p>
+        </footer>
+    
+    </main>
+</body>
+</html>
