@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abigail Gottfried Portfolio</title>
+    <title>Abigail Gottfried - Work</title>
     <style>
         /* General Body and Layout Styling */
         body {
@@ -54,40 +54,43 @@
             padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
+            flex-wrap: wrap;
         }
 
-        /* Sidebar Image Styling */
-        aside {
-            flex: 1;
+        /* Work Item Styling */
+        .work-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
             padding: 20px;
+            width: 45%;
             text-align: center;
+            transition: transform 0.3s ease;
         }
 
-        aside img {
+        .work-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .work-item img {
             width: 100%;
-            max-width: 250px;
+            max-width: 300px;
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Main Section Styling */
-        section {
-            flex: 2;
-            padding: 20px;
-        }
-
-        section header {
-            font-size: 2em;
             margin-bottom: 15px;
-            color: #333;
         }
 
-        article {
-            font-size: 1.2em;
-            line-height: 1.8;
+        .work-item h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .work-item p {
+            font-size: 1.1em;
             color: #555;
-            text-align: justify;
         }
 
         /* Footer Section */
@@ -105,34 +108,39 @@
 <body>
 
     <header>
-        Abigail Gottfried Portfolio
+        Abigail Gottfried - Work
     </header>
 
     <nav>
-        <a href="/FRC.html">FIRST Robotics</a>
-        <a href="/work.html">Work</a>
+        <a href="/index.html">Home</a>
+        <a href="/FRC.html">Robotics</a>
         <a href="/education.html">Education</a>
     </nav>
 
     <main>
-        <!-- Sidebar for the Image -->
-        <aside>
-            <img src="Abigail.png" alt="Abigail Gottfried's Image">
-        </aside>
+        <!-- Work Item 1 -->
+        <div class="work-item">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Silver Springs</h3>
+            <p>pull from my resume but talk about working ther</p>
+        </div>
 
-        <!-- Main Content Section -->
-        <section>
-            <header>About Me</header>
-            <article>
-                I am Abigail Gottfried, and this is a brief overview of who I am. I have a passion for robotics and technology. I have worked on various projects that aim to solve real-world problems. I am constantly learning new things, exploring new technologies, and challenging myself to push the limits of what I can create.
-                
-                My skills range from coding to mechanical design, and I thrive in team environments where collaboration is key. I also enjoy helping others by sharing my knowledge and learning from their experiences. This portfolio showcases some of the work I have done in robotics and other areas. Thank you for visiting!
-            </article>
-        </section>
-    </main>
+        <!-- Work Item 2 -->
+        <div class="work-item">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Medical Numerics</h3>
+            <p>talk about my internship here</p>
+        </div>
+
+        <!-- Work Item 3 -->
+        <div class="work-item">
+            <img src="project3.jpg" alt="Project 3">
+            <h3>uw stout housing</h3>
+            <p>talk about my work here and currently</p>
+        </div>
 
     <footer>
-        <p>Contact | Social Media Links | &copy; 2025 Abigail Gottfried</p>
+        <p>Contact | Social Media Links |  2025 Abigail Gottfried</p>
     </footer>
 
 </body>
