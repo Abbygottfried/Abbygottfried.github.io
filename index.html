@@ -8,14 +8,13 @@
         /* General Body and Layout Styling */
         body {
             font-family: 'Arial', Helvetica, sans-serif;
-            background-color: #ffffff ;
+            background-color: #ffffff;
             color: #333;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        /*brown:#352c23 green:#516941 LGreen:#6a8a54 Tan: #c0a78d */
-        /* Header Section */
+    
         header {
             background-color: #578955;
             color: white;
@@ -24,30 +23,31 @@
             font-size: 2.5em;
             letter-spacing: 2px;
         }
-
-        /* Navigation Bar */
+    
         nav {
             text-align: center;
             margin: 20px 0;
             padding: 10px;
             background-color: #333;
+            flex-wrap: wrap;
         }
-
+    
         nav a {
             text-decoration: none;
             color: white;
             font-size: 1.2em;
-            padding: 10px 20px;
-            margin: 0 15px;
+            padding: 10px 15px;
+            margin: 5px;
+            display: inline-block;
             transition: background-color 0.3s;
         }
-
+    
         nav a:hover {
             background-color: #578955;
             color: #fff;
             border-radius: 5px;
         }
-
+    
         article a {
             text-decoration: none;
             color: rgb(0, 0, 0);
@@ -56,28 +56,28 @@
             margin: 0 15px;
             transition: background-color 0.3s;
         }
-
+    
         article a:hover {
             background-color: #578955;
             color: #fff;
             border-radius: 5px;
         }
-        /* Layout for the main content */
+    
         main {
             display: flex;
             justify-content: space-between;
             padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
+            flex-wrap: wrap;
         }
-
-        /* Sidebar Image Styling */
+    
         aside {
             flex: 1;
             padding: 20px;
             text-align: center;
         }
-
+    
         aside img {
             width: 100%;
             max-width: 300px;
@@ -85,37 +85,32 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-
-        /* Main Section Styling */
+    
         section {
             flex: 2;
             padding: 20px;
         }
-
+    
         section header {
             font-size: 2em;
             margin-bottom: 15px;
             color: #ffffff;
         }
-
+    
         article {
             font-size: 1.2em;
             line-height: 1.8;
             color: #555;
             text-align: justify;
         }
-
-        /* Footer Section */
+    
         footer {
             background-color: #333;
             color: white;
             padding: 20px;
             text-align: center;
-            position: relative;
-            bottom: 0;
-            width: 100%;
         }
-
+    
         footer a {
             text-decoration: none;
             color: white;
@@ -124,13 +119,60 @@
             margin: 0 15px;
             transition: background-color 0.3s;
         }
-
+    
         footer a:hover {
             background-color: #578955;
             color: #fff;
             border-radius: 5px;
         }
-    </style>
+    
+        /* ===== Responsive Design ===== */
+        @media (max-width: 768px) {
+            header {
+                font-size: 2em;
+                padding: 15px 0;
+            }
+    
+            nav {
+                flex-direction: column;
+                padding: 10px;
+            }
+    
+            nav a {
+                display: block;
+                margin: 10px auto;
+                font-size: 1em;
+            }
+    
+            main {
+                flex-direction: column;
+                padding: 10px;
+            }
+    
+            aside, section {
+                flex: 1 1 100%;
+                padding: 10px;
+            }
+    
+            section header {
+                font-size: 1.5em;
+            }
+    
+            article {
+                font-size: 1em;
+            }
+    
+            footer {
+                font-size: 0.9em;
+                padding: 15px 10px;
+            }
+    
+            footer a {
+                display: block;
+                margin: 10px auto;
+            }
+        }
+    </style>    
 </head>
 <body>
 
