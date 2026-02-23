@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abigail Gottfried - Work</title>
     <style>
-
-        *, *::before, *::after {
-        box-sizing: border-box;
-        }   
         /* General Body and Layout Styling */
         body {
             font-family: 'Arial', Helvetica, sans-serif;
@@ -19,50 +15,46 @@
             box-sizing: border-box;
         }
 
+        /* Header Section */
         header {
             background-color: #578955;
             color: white;
-            padding: 25px 0;
+            padding: 20px 0;
             text-align: center;
             font-size: 2.5em;
             letter-spacing: 2px;
         }
-    
+
+        /* Navigation Bar */
         nav {
+
             text-align: center;
             margin: 20px 0;
             padding: 10px;
             background-color: #333;
-            flex-wrap: wrap;
         }
-    
+
         nav a {
             text-decoration: none;
             color: white;
             font-size: 1.2em;
             padding: 10px 20px;
             margin: 0 15px;
-            display: inline-block;
             transition: background-color 0.3s;
-            border-radius: 5px;
         }
-    
+
         nav a:hover {
             background-color: #578955;
             color: #fff;
             border-radius: 5px;
         }
-    
         div a {
             text-decoration: none;
-            background-color: #333;
-            color: #fff;
-            border-radius: 5px;
+            color: rgb(0, 0, 0);
             font-size: 1.2em;
             padding: 10px 20px;
             margin: 0 15px;
             transition: background-color 0.3s;
-            
         }
 
          div a:hover {
@@ -143,52 +135,6 @@
             bottom: 0;
             width: 100%;
         }
-         /* ===== Responsive Design ===== */
-         @media (max-width: 768px) {
-            header {
-                font-size: 2em;
-                padding: 15px 0;
-            }
-    
-            nav {
-                flex-direction: column;
-                padding: 10px;
-            }
-    
-            nav a {
-                display: block;
-                margin: 10px auto;
-                font-size: 1em;
-            }
-    
-            main {
-                flex-direction: column;
-                padding: 10px;
-            }
-    
-            aside, section {
-                flex: 1 1 100%;
-                padding: 10px;
-            }
-    
-            section header {
-                font-size: 1.5em;
-            }
-    
-            article {
-                font-size: 1em;
-            }
-    
-            footer {
-                font-size: 0.9em;
-                padding: 15px 10px;
-            }
-    
-            footer a {
-                display: block;
-                margin: 10px auto;
-            }
-        }
     </style>
 </head>
 <body>
@@ -211,7 +157,7 @@
             <h3>Romi Robot</h3>
             <p>I programmed the Romi robot using both Java and C++, using the project as an opportunity 
                 to teach myself C++. While I had prior experience with Java, this hands-on approach helped
-                 me gain knowledge of C++ and broadening my understanding.</p>
+                me gain knowledge of C++ and broaden my understanding of programming concepts.</p>
         </div>
 
             <!-- website -->
@@ -221,8 +167,8 @@
                 <p>I really enjoyed building this website and learned a lot throughout the process.
                     It was my first time having full creative freedom over a web project, 
                     allowing me to challange myself. I also gained valuable experience setting up
-                     and deploying the site through GitHub. I'm excited to continue iterating on this
-                      website adding projects and functionalities.</p>
+                    and deploying the site through GitHub. I'm excited to continue iterating on this
+                    website adding projects and functionalities!</p>
                      <br>
                     <a href="https://github.com/Abbygottfried/Abbygottfried.github.io" target="_blank"> Website Code</a>
             </div>
@@ -231,16 +177,28 @@
         <div class="work-item">
             <img src="/img/mediawiki.png" alt="media wiki logo">
             <h3>Media Wiki</h3>
-            <p>I created and deployed updated MediaWiki instances for the company, migrating existing pages 
-                and images from an outdated and unsupported system. The original platform, which
-                housed critical resources such as documentation and meeting logs, was no longer compatible with
-                newer software versions, necessitating a full transition to a modern environment.</p>
+            <p>During my High School internship, I was tasked with updating and moving their
+                 documentation. Their documentation and meeting notes were hosted locally on a no
+                 longer supported media wiki. I was tasked with creating two media wikies, 
+                 one for their documentation and one for their meeting notes, that would be 
+                 hosted on a remote server hosted by the parent company. </p>
+            <p>After researching, I discovered the current media wiki was incompatible with updated versions and the 
+                 data would have to be extracted, updated and imported into a new version. Utilizing
+                 java script and Regex in a Linux environment, I created an algorithm that 
+                 automated the process of modifying and separating documentation from their 
+                 meeting notes. I utilized docker images and containers to host a media wiki 
+                 instance on my local host, that would eventually be transferred to the remote 
+                 server. </p>
+            <p> I worked in a professional setting and participated in weekly scrum 
+                 meetings. Where I would present what I accomplished and my goals for the next 
+                 week. I would also receive feedback on my work, and requests of additional 
+                 functionalities to add to the project.</p>
         </div>
 
     
 
     <footer>
-        <p>amgottfried8@gmail.com    <a href="https://www.linkedin.com/in/abigail-gottfried-b40b47234/" target="_blank">Linkedin</a>   Abigail Gottfried 2025</p>
+        <p>amgottfried8@gmail.com  |  <a href="https://www.linkedin.com/in/abigail-gottfried-b40b47234/" target="_blank">Linkedin</a> | Abigail Gottfried 2025</p>
     </footer>
 
     
